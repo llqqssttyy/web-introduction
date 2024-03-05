@@ -1,0 +1,45 @@
+#movies {
+  background-color: var(--color-pink-scale-1);
+}
+
+.marquee {
+  padding: 1rem 0 !important;
+  margin-bottom: 2.4rem !important;
+  font-weight: var(--weight-regular) !important;
+
+  background-color: var(--color-grey-scale-1) !important;
+}
+
+table {
+  border-collapse: collapse;
+  border: 0.2rem solid var(--color-grey-scale-5);
+
+  line-height: 2.4rem;
+  letter-spacing: 0.05rem;
+
+  background-color: var(--color-grey-scale-1);
+
+  white-space: nowrap;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 0.8rem;
+}
+
+tr {
+  border-bottom: 0.2rem solid var(--color-grey-scale-5);
+}
+
+.poster {
+  width: 15rem;
+}
+
+.plot {
+  white-space: wrap;
+}
+
+.link:hover {
+  color: var(--color-pink-scale-4);
+}

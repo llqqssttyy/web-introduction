@@ -1,0 +1,129 @@
+:root {
+  /* Color */
+  --color-purple: #67568c;
+  --color-grey-scale-1: rgb(255, 255, 255);
+  --color-grey-scale-2: rgb(252, 252, 253);
+  --color-grey-scale-3: rgb(180, 180, 180);
+  --color-grey-scale-4: rgb(139, 139, 139);
+  --color-grey-scale-5: rgb(1, 1, 1);
+  --color-pink-scale-1: #fff6f1;
+  --color-pink-scale-2: #ffc6c7;
+  --color-pink-scale-3: #ff8ba7;
+  --color-pink-scale-4: #ff6e6c;
+
+  /* Font Size */
+  --font-extreme-large: 4.8rem;
+  --font-large: 2.4rem;
+  --font-medium: 2rem;
+  --font-regular: 1.5rem;
+  --font-small: 1.4rem;
+
+  /* Font Weight */
+  --weight-extra-bold: 800;
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+  font-family: 'Pretendard', sans-serif;
+  font-size: 62.5%;
+
+  background-color: var(--color-pink-scale-3);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  height: 100%;
+
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-grey-scale-5);
+}
+
+p {
+  margin: 0;
+}
+
+input {
+  border: 0.2rem solid var(--color-grey-scale-5);
+  border-radius: 0.4rem;
+  padding: 0.8rem 0.8rem 0.4rem 0.8rem;
+
+  font-size: var(--font-regular);
+  line-height: 2.3rem;
+  letter-spacing: 0.05rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+label {
+  line-height: 2.4rem;
+  letter-spacing: 0.05rem;
+}
+
+button {
+  /* cancel default style */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* appearance */
+  background-color: var(--color-primary);
+  color: var(--color-grey-scale-1);
+  border: none;
+  border-radius: 0.4rem;
+
+  /* text */
+  line-height: 1.6rem;
+  letter-spacing: 0.125rem;
+  font-size: var(--font-small);
+  font-weight: var(--weight-regular);
+  text-align: center;
+  padding: 1rem 1.6rem;
+
+  /* prevent new line */
+  white-space: nowrap;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.title {
+  margin: 0 0 2.4rem;
+
+  font-size: var(--font-extreme-large);
+  font-weight: var(--weight-extra-bold);
+
+  letter-spacing: 0.25rem;
+}
+
+.section {
+  padding: 3.2rem 4.8rem;
+  border-bottom: 0.2rem solid var(--color-grey-scale-5);
+}
+
+/* 반응형 */
+/* 모바일 */
+@media (max-width: 767px) {
+}

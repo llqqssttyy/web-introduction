@@ -1,0 +1,16 @@
+#guest-book {
+  background-color: var(--color-pink-scale-2);
+  font-size: var(--font-large);
+}
+
+input[id='name'] {
+  margin-bottom: 2rem;
+}
+
+#guest-book-form > .container {
+  margin-top: 2rem;
+}
+
+#guest-book-form > p {
+  margin-bottom: 1rem;
+}

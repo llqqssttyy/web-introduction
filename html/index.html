@@ -3,23 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/movies.css" />
+    <link rel="stylesheet" href="../css/guestBook.css" />
+    <link rel="stylesheet" href="https://unpkg.com/neobrutalismcss@latest" />
     <title>자기소개 페이지</title>
   </head>
   <body>
-    <div class="section">
+    <div class="section" id="header">
       <h1 class="title">자기소개</h1>
       <ul>
-        <li>이름: 렛서</li>
-        <li>사는 곳: 서대문구</li>
-        <li>안녕하세요. 렛서입니다. 커피와 동물 친구들을 사랑해요.</li>
+        <li id="my-name">이름 | 렛서</li>
+        <li id="address">사는 곳 | 서대문구</li>
+        <li id="introduce">커피와 동물 친구들을 사랑합니다 🐼</li>
       </ul>
     </div>
-    <div class="section">
+    <div class="section" id="movies">
       <h1 class="title">인생 영화 BEST5</h1>
+      <div class="marquee">
+        <div class="marquee-content">
+          <span>[ 라이프 오브 파이 ]</span>
+          <span>[ 인터스텔라 ]</span>
+          <span>[ 바람계곡의 나우시카 ]</span>
+          <span>[ 1917 ]</span>
+          <span>[ 그대들은 어떻게 살 것인가 ]</span>
+          <span>사실 이건 라이브러리입니다 심심해서 넣어 봤어요</span>
+        </div>
+      </div>
       <table>
         <thead>
           <tr>
-            class="poster"
             <th>순위</th>
             <th>제목</th>
             <th>포스터</th>
@@ -37,7 +51,7 @@
                 class="poster"
               />
             </td>
-            <td>
+            <td class="plot">
               인도에서 동물원을 운영하던 파이의 가족들은 동물들을 싣고 배로
               이민을 떠난다. 그러던 와중 거센 폭풍우를 만나 배는 침몰하고
               가까스로 홀로 살아남은 파이는 얼룩말, 하이에나, 오랑우탄, 그리고
@@ -45,6 +59,7 @@
             </td>
             <td>
               <a
+                class="link"
                 href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query=%EB%9D%BC%EC%9D%B4%ED%94%84%EC%98%A4%EB%B8%8C%ED%8C%8C%EC%9D%B4&oquery=%EC%9D%B8%ED%84%B0%EC%8A%A4%ED%85%94%EB%9D%BC&tqi=iPU7RwqVN8Cssew6t9ssssssszC-316083"
                 >클릭</a
               >
@@ -59,7 +74,7 @@
                 class="poster"
               />
             </td>
-            <td>
+            <td class="plot">
               세계의 경제 및 정부가 완전히 붕괴되고, 과거의 잘못으로 인해
               인류에게 최악의 미래가 다가온다. 광활한 우주로 떠나 인간이 살 수
               있는 행성을 찾으러 나선 우주인들의 감동적이고 위대한 여정이
@@ -67,6 +82,7 @@
             </td>
             <td>
               <a
+                class="link"
                 href="https://search.naver.com/search.naver?ie=UTF-8&sm=whl_nht&query=%EC%9D%B8%ED%84%B0%EC%8A%A4%ED%85%94%EB%9D%BC"
                 >클릭</a
               >
@@ -81,13 +97,14 @@
                 class="poster"
               />
             </td>
-            <td>
+            <td class="plot">
               산업 문명이 붕괴한 후 생존한 소수 인류가 오염물질을 내뿜는 부해의
               위협 속에서 군소국으로 흩어져 살아가는 미래의 지구, 지혜로운
               바람계곡의 공주 나우시카는 자연과 교감하며 살아간다.
             </td>
             <td>
               <a
+                class="link"
                 href="https://search.naver.com/search.naver?ie=UTF-8&sm=whl_nht&query=%EB%B0%94%EB%9E%8C%EA%B3%84%EA%B3%A1%EC%9D%98+%EB%82%98%EC%9A%B0%EC%8B%9C%EC%B9%B4"
                 >클릭</a
               >
@@ -102,7 +119,7 @@
                 class="poster"
               />
             </td>
-            <td>
+            <td class="plot">
               제1차 세계대전이 한창인 1917년. 독일군에 의해 모든 통신망이 파괴된
               상황 속에서 영국군 병사 '스코필드'(조지 맥케이)와
               '블레이크'(딘-찰스 채프먼)에게 하나의 미션이 주어졌다. 함정에 빠진
@@ -113,6 +130,7 @@
             </td>
             <td>
               <a
+                class="link"
                 href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bkEw&pkid=68&os=10040810&qvt=0&query=%EC%98%81%ED%99%94%201917"
                 >클릭</a
               >
@@ -127,13 +145,14 @@
                 class="poster"
               />
             </td>
-            <td>
+            <td class="plot">
               11살 소년 마히토가 돌아가신 엄마의 고향에서 파란 털을 가진 왜가리
               한 마리를 만난다. 마히토는 미스터리한 탑으로 그를 유인하는
               왜가리를 따라 '이세계'로의 모험을 시작한다.
             </td>
             <td>
               <a
+                class="link"
                 href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query=%EA%B7%B8%EB%8C%80%EB%93%A4+%EC%96%B4%EB%96%BB%EA%B2%8C+%EC%82%B4+%EA%B2%83%EC%9D%B8%EA%B0%80&oquery=%EB%9D%BC%EC%9D%B4%ED%94%84%EC%98%A4%EB%B8%8C%ED%8C%8C%EC%9D%B4&tqi=iPU7UlqVN8Cssf4VjPGssssss2h-366683"
                 >클릭</a
               >
@@ -142,7 +161,7 @@
         </tbody>
       </table>
     </div>
-    <div class="section">
+    <div class="section" id="guest-book">
       <h1 class="title">방명록</h1>
       <form id="guest-book-form">
         <label for="name">이름 </label>
@@ -164,8 +183,10 @@
         <input id="the-boy-and-the-heron" type="checkbox" />
         <label for="the-boy-and-the-heron"> 그대들은 어떻게 살 것인가 </label>
 
-        <button type="submit">등록</button>
-        <button type="reset">취소</button>
+        <div class="container">
+          <button class="nb-button default" type="submit">등록</button>
+          <button class="nb-button pale-red" type="reset">취소</button>
+        </div>
       </form>
     </div>
 
